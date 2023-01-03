@@ -6,5 +6,5 @@
 Learning algorithms :)
 
 * ALGORITHMS
-  *[HeapSort](#src/main/java/edu/maor/HeapSort.java)
+    * [HeapSort](#src/main/java/edu/maor/HeapSort.java)
 <!-- TOC -->
