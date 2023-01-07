@@ -15,7 +15,7 @@ public class HeapSort {
             heapifyMax(nums, len, largest);
         }
     }
-    public void sortMinMax(int[] nums){
+    public void sort(int[] nums){
         int len = nums.length;
         for (int i = len / 2 - 1; i >= 0; i--) heapifyMax(nums, len, i);
         for (int i = len - 1; i > 0; i--) {
@@ -28,7 +28,7 @@ public class HeapSort {
     public static void main(String[] args) {
         int[] nums = { 12, 11, 13, 5, 6, 7, 20, 12, 10, 16, 8 };
         HeapSort heapSort = new HeapSort();
-        heapSort.sortMinMax(nums);
+        heapSort.sort(nums);
 
         System.out.println("Sorted array is");
         for(int n: nums) System.out.printf("%d ", n);
