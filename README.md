@@ -8,5 +8,5 @@
 * [SORTING ALGORITHMS](src/main/java/edu/maor/sorting/README.md)
   * [HeapSort](src/main/java/edu/maor/sorting/HeapSort.java)
   * [QuickSort](src/main/java/edu/maor/sorting/QuickSort.java)
-* 
+* [GRAPHS](src/main/java/edu/maor/graphs/README.md)
 <!-- TOC -->

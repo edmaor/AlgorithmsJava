@@ -1,7 +1,7 @@
 package edu.maor.sorting;
 
 public class HeapSort {
-    void heapifyMax(int[] nums, int len, int i) {
+    void heapify(int[] nums, int len, int i) {
         int largest = i;
         int lc = 2 * i + 1; // Get left child
         int rc = 2 * i + 2; // Get right child
@@ -12,17 +12,17 @@ public class HeapSort {
             int swap = nums[i];
             nums[i] = nums[largest];
             nums[largest] = swap;
-            heapifyMax(nums, len, largest);
+            heapify(nums, len, largest);
         }
     }
     public void sort(int[] nums){
         int len = nums.length;
-        for (int i = len / 2 - 1; i >= 0; i--) heapifyMax(nums, len, i);
+        for (int i = len / 2 - 1; i >= 0; i--) heapify(nums, len, i);
         for (int i = len - 1; i > 0; i--) {
             int temp = nums[0];
             nums[0] = nums[i];
             nums[i] = temp;
-            heapifyMax(nums, i, 0);
+            heapify(nums, i, 0);
         }
     }
     public static void main(String[] args) {
