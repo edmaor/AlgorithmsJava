@@ -8,6 +8,7 @@ public class DFS {
         for (Graph.Edge ge: graph.adjacencyList[node]){
             if (!visited[ge.destination])
                 dfsUtil(graph, ge.destination, visited);
+
         }
     }
     public void dfs(Graph graph, int startingNode){

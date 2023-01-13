@@ -2,12 +2,12 @@ package edu.maor.graphs;
 
 import java.util.LinkedList;
 public class Graph {
-    public class Edge {
-        int origin, destination, weight;
-        public Edge (int origin, int destination, int weight){
+    public static class Edge {
+        int origin, destination, cost;
+        public Edge (int origin, int destination, int cost){
             this.origin = origin;
             this.destination = destination;
-            this.weight = weight;
+            this.cost = cost;
         }
     }
     protected int nodes;
@@ -21,8 +21,8 @@ public class Graph {
     public void addEdge(int origin, int destination){
         adjacencyList[origin].add(new Edge(origin, destination, 0));
     }
-    public void addEdge(int origin, int destination, int weight){
-        adjacencyList[origin].add(new Edge(origin, destination, weight));
+    public void addEdge(int origin, int destination, int cost){
+        adjacencyList[origin].add(new Edge(origin, destination, cost));
     }
     public void removeEdge(int origin, int destination){
         Edge edge = null;
